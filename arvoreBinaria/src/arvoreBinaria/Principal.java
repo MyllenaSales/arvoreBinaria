@@ -13,11 +13,15 @@ public class Principal {
 		e.inserir(1);
 		e.inserir(3);
 
+		System.out.println("Árvore antes da ordenação: ");
+		e.preOrdem();
+
+		System.out.println("\nÁrvore após a ordenação: ");
 		e.inOrdem();
 		
 		n = e.valorMinimo();
 		
-		System.out.println("Valor minimo: "+n.getValor());
+		System.out.println("\nValor minimo: "+n.getValor());
 		
 		n = e.valorMaximo();
 		
@@ -25,7 +29,7 @@ public class Principal {
 		
         e.removerMenor();
 
-        System.out.println("Árvore ordenada após remover o valor mínimo:");
+        System.out.println("\nÁrvore ordenada após remover o valor mínimo:");
         e.inOrdem();
 	
 	}
