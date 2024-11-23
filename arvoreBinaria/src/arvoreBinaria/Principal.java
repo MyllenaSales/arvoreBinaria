@@ -31,6 +31,8 @@ public class Principal {
 
         System.out.println("\nÁrvore ordenada após remover o valor mínimo:");
         e.inOrdem();
+
+		System.out.println("\nAltura da árvore: "+ e.alturaArvore());
 	
 	}
 }

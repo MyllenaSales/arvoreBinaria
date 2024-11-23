@@ -137,4 +137,23 @@ public class Estrutura {
         
         return no;
     }
+
+	public int alturaArvore() {
+    	return alturaArvore(this.raiz);
+    }
+    
+    private int alturaArvore (No no) {
+        if (no == null) {
+            return 0; 
+        }
+      
+        int alturaEsquerda = alturaArvore(no.getEsquerda());
+        int alturaDireita = alturaArvore(no.getDireita());
+
+        if (alturaEsquerda > alturaDireita) {
+            return alturaEsquerda + 1;
+        } else {
+            return alturaDireita + 1;
+        }
+    }
 }
